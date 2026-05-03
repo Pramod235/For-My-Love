@@ -1,76 +1,78 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
-    font-weight: 900;
 }
 
-body{
-    /* overflow: hidden; */
-    background-image: url(giphy.gif);
+body {
+    min-height: 100vh;
+    background: url(giphy.gif) center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
 }
 
-
-.main-container{
-    width: 60%;
-    margin: 3px auto;
+/* MAIN TEXT */
+.main-container {
+    max-width: 800px;
+    width: 100%;
 }
 
-.second-text{
-    height: fit-content;
-    width: 10rem;
-    color: rgb(185, 166, 166);
-    position: absolute;
-    top: 10px;
-    right: 10px;
+h1 {
+    color: rgb(176, 0, 120);
+    padding: 1rem;
+    font-size: clamp(1.5rem, 5vw, 2.7rem);
+    line-height: 1.3;
 }
 
-h6{
-    font-size: 12px;
+/* SMALL TEXTS */
+.second-text,
+.third-text,
+.fourth-text {
+    position: fixed;
+    width: clamp(120px, 25vw, 200px);
+    font-size: clamp(10px, 2vw, 14px);
     font-weight: 300;
 }
 
-.third-text{
-    height: fit-content;
-    width: 10rem;
-    color: rgb(131, 125, 125);
-    position: absolute;
+/* POSITIONS */
+.second-text {
+    top: 10px;
+    right: 10px;
+    color: rgb(185, 166, 166);
+}
+
+.third-text {
     bottom: 10px;
     left: 10px;
+    color: rgb(131, 125, 125);
 }
 
-.fourth-text{
-    height: fit-content;
-    width: 10rem;
-    color: rgb(168, 181, 184);
-    position: absolute;
+.fourth-text {
     bottom: 10px;
     right: 10px;
+    color: rgb(168, 181, 184);
 }
 
-h1{
-    color: rgb(176, 0, 120);
-    margin: 12px;
-    padding: 20px;
-    font-size: 43px;
-    text-align: center;
-}
-
-button{
+/* BUTTON (if you use later) */
+button {
     width: 6rem;
-    margin:  10px auto;
-    height: 3.5rem;
+    height: 3rem;
     border: 3px solid red;
-    border-radius: 1.75rem;
-    box-shadow: -5px 26px 29px -10px rgba(255, 0, 0, 0.504), 0px 0px 30px 3px rgba(255, 0, 0, 0.504);
+    border-radius: 1.5rem;
+    margin-top: 1rem;
 }
 
-.yes{
+.yes {
     background-color: red;
     color: white;
 }
 
-img{
+/* REMOVE THIS (it breaks layout on mobile) */
+/* img {
     height: 100vh;
     margin: 0 250px;
-}
+} */
