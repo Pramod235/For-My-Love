@@ -85,6 +85,25 @@ button {
     color: white;
 }
 
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.5rem;
+        padding: 0.8rem;
+        line-height: 1.5;
+    }
+
+    h6 {
+        font-size: 0.75rem;
+    }
+
+    .second-text,
+    .third-text,
+    .fourth-text {
+        width: 45vw; /* better fit */
+    }
+}
+
 /* REMOVE THIS (it breaks layout on mobile) */
 /* img {
     height: 100vh;
