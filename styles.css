@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+}
+
+body{
+    /* overflow: hidden; */
+    background-image: url(giphy.gif);
+}
+
+
+.main-container{
+    width: 60%;
+    margin: 3px auto;
+}
+
+.second-text{
+    height: fit-content;
+    width: 10rem;
+    color: rgb(185, 166, 166);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+h6{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.third-text{
+    height: fit-content;
+    width: 10rem;
+    color: rgb(131, 125, 125);
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.fourth-text{
+    height: fit-content;
+    width: 10rem;
+    color: rgb(168, 181, 184);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+h1{
+    color: rgb(176, 0, 120);
+    margin: 12px;
+    padding: 20px;
+    font-size: 43px;
+    text-align: center;
+}
+
+button{
+    width: 6rem;
+    margin:  10px auto;
+    height: 3.5rem;
+    border: 3px solid red;
+    border-radius: 1.75rem;
+    box-shadow: -5px 26px 29px -10px rgba(255, 0, 0, 0.504), 0px 0px 30px 3px rgba(255, 0, 0, 0.504);
+}
+
+.yes{
+    background-color: red;
+    color: white;
+}
+
+img{
+    height: 100vh;
+    margin: 0 250px;
+}
